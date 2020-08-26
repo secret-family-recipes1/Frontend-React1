@@ -34,7 +34,7 @@ Color Scheme:
 
 [ ] Item 4 - Showed great insight in setting up the state management for the app's forms. Form validation is in place for all fields, and covers all use cases. Loading states and success/error notifications are in place and add to the overall UX of the app.
 
-
+WEB Unit 2 Rubric (https://www.notion.so/Web-Unit-2-b9f9c21279964ea4b923ca6252f15421)
 
 
 

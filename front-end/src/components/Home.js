@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <div>
             <div className="imageContainer">
-                <img className="image" src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="fresh produce background photo"/>
+                <img className="image" src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="fresh produce background"/>
                 <div>
                     <div className='background'>
                         <Link to='/signup'>
@@ -14,8 +14,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div>       
     );
   };
 export default Home;

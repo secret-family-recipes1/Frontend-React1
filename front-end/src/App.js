@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'; // universally unique ID - generates a random unique ID
 import FormSchema from './validation/FormSchema'
 import './App.css';
 import * as yup from 'yup'
+import axios from 'axios'
 import Member from './components/Member'
 import SignUp from './components/SignUp'
 import LogIn from './components/LogIn'
@@ -26,9 +27,37 @@ const initialFormErrors = {
 
 export default function App() {
   // giving state variables initial value
+  const [users, setUsers] = useState([])
   const [members, setMembers] = useState(initialTeamList)
   const [formValues, setFormValues] = useState(initialFormValues)
   const [formErrors, setFormErrors] = useState(initialFormErrors)
+
+  ///// GET User Data from API /////
+  useEffect(() => {
+    axios.get('https://reqres.in/api/users')
+    .then(res => {
+      setUsers(res.data.data)
+      })
+    .catch(err => {
+      console.log('error')
+    })
+  }, [])
+  
+  console.log(users)
+
+  ///// POST a user (when a user is submitted in the form) /////
+  const postUsers = newUser => {
+      axios.post('https://reqres.in/api/users', newUser)
+      .then(res => {
+        setUsers([res.data, ...users])
+        setFormValues(initialFormValues)
+        console.log(users)
+      })
+      .catch(err => {
+        console.log('error')
+      })
+  }
+
 
   const onInputChange = e => {
     const { name } = e.target

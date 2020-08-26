@@ -4,9 +4,10 @@ import { v4 as uuid } from 'uuid'; // universally unique ID - generates a random
 import FormSchema from './validation/FormSchema'
 import './App.css';
 import * as yup from 'yup'
-import Member from './components/Member';
+import Member from './components/Member'
 import SignUp from './components/SignUp'
 import LogIn from './components/LogIn'
+import Home from './components/Home'
 
 const initialTeamList = []
 
@@ -77,6 +78,11 @@ export default function App() {
 
   return (
     <div className="App container"> 
+    <header>
+        <Link className="headerName" to='/'>
+          <h1>Secret Family Recipes</h1>
+        </Link>
+      </header>
       <Switch>
         <Route path='/signup'>
           <SignUp
@@ -91,6 +97,9 @@ export default function App() {
             onInputChange={onInputChange}
             onSubmit={onSubmit}
           />
+        </Route>
+        <Route path='/'>
+          <Home />
         </Route>
       </Switch>
       

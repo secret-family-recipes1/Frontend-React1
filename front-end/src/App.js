@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Typed from 'react-typed'
 import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'; // universally unique ID - generates a random unique ID
 import FormSchema from './validation/FormSchema'
@@ -9,6 +10,8 @@ import Member from './components/Member'
 import SignUp from './components/SignUp'
 import LogIn from './components/LogIn'
 import Home from './components/Home'
+import Users from './components/Users'
+import Header from './components/Header'
 
 const initialTeamList = []
 
@@ -108,9 +111,10 @@ export default function App() {
   return (
     <div className="App container"> 
     <header>
-        <Link className="headerName" to='/'>
+        {/* <Link className="headerName" to='/'>
           <h1>Secret Family Recipes</h1>
-        </Link>
+        </Link> */}
+        <Header/>  
       </header>
       <Switch>
         <Route path='/signup'>
@@ -126,6 +130,9 @@ export default function App() {
             onInputChange={onInputChange}
             onSubmit={onSubmit}
           />
+        </Route>
+        <Route path='/users'>
+          <Users />
         </Route>
         <Route path='/'>
           <Home />
@@ -144,6 +151,5 @@ export default function App() {
           }
         </div>
       </div>   
-    
   );
 }

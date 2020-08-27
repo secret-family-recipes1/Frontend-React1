@@ -10,12 +10,6 @@ You will also have the ability to upload a photo of the original recipe along wi
 Product Vision Document:
 (https://docs.google.com/document/d/1kY-G09a7rUUpEeJgmq-f9Hi8AZ1pKM_aqV34z8GQhvE/edit#heading=h.7unkvve9utkw)
 
-Color Scheme:
-- Page background: Bisque
-- Title and Header Backgrounds: Salmon or crimson
-- Text color: White Smoke with black border
-- Font: inter
-
 ## MVP OBJECTIVES
 [X] Item 1 - Created functional components and used events in application to add dynamic functionality to app.
 
@@ -32,7 +26,7 @@ Color Scheme:
 
 [X] Item 3 - Not only are standard techniques employed, the code is organized in such a fashion that the student demonstrated proper use of container vs presentational components or other industry standards, conventions, or patterns.
 
-[ ] Item 4 - Showed great insight in setting up the state management for the app's forms. Form validation is in place for all fields, and covers all use cases. Loading states and success/error notifications are in place and add to the overall UX of the app.
+[X] Item 4 - Showed great insight in setting up the state management for the app's forms. Form validation is in place for all fields, and covers all use cases. Loading states and success/error notifications are in place and add to the overall UX of the app.
 
 WEB Unit 2 Rubric (https://www.notion.so/Web-Unit-2-b9f9c21279964ea4b923ca6252f15421)
 

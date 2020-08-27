@@ -62,6 +62,8 @@ class Login extends Component {
 				</form>
 				<Link to="/">Home </Link> 
 				<br/>
+				<Link to="/users">User API Data </Link> 
+				<br/>
 				<Link to="/signup"> Create an account</Link>
 			</div>
 		);

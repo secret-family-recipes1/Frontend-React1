@@ -132,7 +132,8 @@ export default function App() {
           />
         </Route>
         <Route path='/users'>
-          <Users />
+        <Link to="/">Home </Link> 
+        {users.map(usr => {return (<Users key={usr.email} details={usr} />)})} 
         </Route>
         <Route path='/'>
           <Home />

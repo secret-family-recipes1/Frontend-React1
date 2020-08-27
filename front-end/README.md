@@ -28,9 +28,9 @@ Color Scheme:
 ## STRETCH OBJECTIVES
 [X] Item 1 - Incorporate a third party event/animation library like unto Greensock(GSAP), Anime, React-motion, etc. (https://greensock.com/react/)
 
-[ ] Item 2 - Was able to architect components to be easily reused. Student used advanced React techniques like the composition pattern, custom hooks, render props, HOCs, etc.
+[X] Item 2 - Was able to architect components to be easily reused. Student used advanced React techniques like the composition pattern, custom hooks, render props, HOCs, etc.
 
-[ ] Item 3 - Not only are standard techniques employed, the code is organized in such a fashion that the student demonstrated proper use of container vs presentational components or other industry standards, conventions, or patterns.
+[X] Item 3 - Not only are standard techniques employed, the code is organized in such a fashion that the student demonstrated proper use of container vs presentational components or other industry standards, conventions, or patterns.
 
 [ ] Item 4 - Showed great insight in setting up the state management for the app's forms. Form validation is in place for all fields, and covers all use cases. Loading states and success/error notifications are in place and add to the overall UX of the app.
 

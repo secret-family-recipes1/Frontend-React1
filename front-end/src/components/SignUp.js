@@ -79,6 +79,8 @@ class SignUp extends Component {
 				</form>
                 <Link to="/">Home </Link> 
 				<br/>
+                <Link to="/users">User API Data </Link> 
+				<br/>
 				<Link to="/login">Login Here</Link>
 			</div>
 		);

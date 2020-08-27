@@ -1,13 +1,12 @@
 import React from 'react';
 import Typed from 'react-typed'
-import {Typography, Box} from '@material-ui/core'
+import {Typography} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
   
-
 const useStyles = makeStyles(theme => ({
     typedContainer: {
       position: 'absolute',
-      top: '5%',
+      top: '8%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
       width: '100%',
